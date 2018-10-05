@@ -16,6 +16,8 @@ export default {
   },
   methods: {},
   computed: {},
-  mounted: function() {}
+  mounted: function() {
+    this.$emit('ww-loaded', this);
+  }
 };
 </script>

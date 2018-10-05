@@ -5,7 +5,6 @@ const wwEnableMetrics = false;
 
 const addComponent = function () {
     if (window.vm) {
-        window.vm.addComponent(name, wwObject);
 
         wwLib.wwObject.registerContentType(
             name,
@@ -26,6 +25,8 @@ const addComponent = function () {
             },
             wwEnableMetrics
         );
+
+        window.vm.addComponent(name, wwObject);
 
         return true;
     }
