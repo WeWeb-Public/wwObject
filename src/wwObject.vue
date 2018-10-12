@@ -9,14 +9,19 @@
 export default {
   name: "ww-text",
   props: {
-    wwObject: Object
+    wwObjectRef: Object,
   },
   data() {
     return {};
   },
+  computed: {
+    wwObject() {
+      //return this.wwObjectRef.wwGet();
+      return this.$store.state.wwObjects[this.wwObjectRef.uniqueId];
+    },
+  },
   methods: {},
-  computed: {},
-  mounted: function() {
+  mounted: function () {
     this.$emit('ww-loaded', this);
   }
 };
