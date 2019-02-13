@@ -1,7 +1,5 @@
 <template>
-    <div v-wwo>
-        I AM WWOBJECT !
-    </div>
+    <div>I AM WWOBJECT !</div>
 </template>
 
 
